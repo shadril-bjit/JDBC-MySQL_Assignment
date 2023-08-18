@@ -1,4 +1,0 @@
-SELECT members.name, members.type, members.email, books.title, books.author, books.genre, transactions.transDate FROM `transactions`
-LEFT JOIN `books` ON books.id = transactions.bookId
-LEFT JOIN `members` ON members.id = transactions.memberId
-WHERE transactions.transType = 'Issue'
